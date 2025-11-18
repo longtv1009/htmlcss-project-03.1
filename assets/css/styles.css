@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #143c3c;
+    --secondary-color: #152427;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Public Sans", sans-serif;
+}
+
+select,
+input,
+textarea,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* Common */
+.container {
+    width: 1140px;
+    max-width: 100% - 48px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-heading {
+    color: var(--secondary-color);
+    font-family: Poppins;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+}
+
+.section-desc {
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.btn {
+    --height: 57px;
+
+    display: inline-block;
+    width: 173px;
+    height: var(--height);
+    padding: 0 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 99px;
+    color: #fff;
+    text-align: center;
+    background: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: var(--height);
+    transition: 0.25s;
+}
+
+.btn:hover {
+    color: var(--primary-color);
+    background: #fff;
+}
